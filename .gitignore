@@ -42,5 +42,6 @@ Thumbs.db
 
 
 /node_modules
+cypress/screenshots
 cypress.env.json
 cypress/results

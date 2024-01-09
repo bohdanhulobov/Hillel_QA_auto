@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "cy:run:all:chrome": "npx cypress run -b chrome",
-        "report:merge": "npx mochawesome-merge 'cypress/results/mochawesome-report/*.json' > 'cypress/results/merged-report/mochawesome-merged.json'",
+        "report:merge": "npx mochawesome-merge 'cypress/results/mochawesome-report/*.json' -o 'cypress/results/merged-report/mochawesome-merged.json'",
         "report:html": "npx marge cypress/results/merged-report/mochawesome-merged.json --reportDir=cypress/results/",
         "report:delete": "rm cypress/results/* cypress/results/merged-report/* cypress/results/mochawesome-report/* || true",
         "cy:run:all:report": "npm run report:delete || true && npx cypress run",
